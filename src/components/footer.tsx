@@ -1,6 +1,5 @@
 import { ShieldHalf } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
-import { GithubMark } from "@/components/github-mark";
 
 export function Footer() {
   return (
@@ -11,17 +10,6 @@ export function Footer() {
             <ShieldHalf className="h-4 w-4" />
             <span>File Encryptor</span>
           </div>
-
-          {/* TODO: replace with actual GitHub repo URL */}
-          <a
-            href="https://github.com/REPLACE_ME"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
-          >
-            <GithubMark className="h-4 w-4" />
-            View source on GitHub
-          </a>
         </div>
 
         <Separator className="my-6" />

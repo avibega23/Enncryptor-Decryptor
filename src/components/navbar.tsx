@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { ShieldHalf, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { GithubMark } from "@/components/github-mark";
 
 const NAV_LINKS = [
   { href: "/encrypt", label: "Encrypt" },
@@ -31,19 +30,6 @@ export function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-2 md:flex">
-          <Button variant="ghost" size="icon" asChild>
-            <a
-              href="https://github.com/REPLACE_ME"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="View source on GitHub"
-            >
-              <GithubMark className="h-4 w-4" />
-            </a>
-          </Button>
-        </div>
-
         <Button
           variant="ghost"
           size="icon"
@@ -68,15 +54,7 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <a
-              href="https://github.com/REPLACE_ME"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
-            >
-              <GithubMark className="h-4 w-4" />
-              GitHub
-            </a>
+
           </div>
         </nav>
       )}
